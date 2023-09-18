@@ -1,0 +1,31 @@
+{
+  "name": "isdev_site_api",
+  "version": "1.0.0",
+  "description": "web_api nodejs prisma and postgreSQL database",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "author": "ced_stark08",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.6.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.20",
+    "pg": "^8.8.0",
+    "prisma": "^4.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.27.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1"
+  },
+  "prisma": {
+    "schema": "models/schema.prisma",
+    "seed": "models/seed.js"
+  }
+}
